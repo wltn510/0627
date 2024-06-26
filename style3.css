@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Noto+Sans+KR:wght@100..900&display=swap');
+body {font-family: "Noto Sans KR", sans-serif;}
+p {font-family: "Noto Sans KR", sans-serif; font-weight: 300; text-shadow: 3px 3px 3px black;}
+h3 {font-family: "Nanum Myeongjo", serif; font-weight: bolder; font-size: 45px;text-shadow: 3px 3px 3px black;}
+
+/* reset */
+* {margin:0; padding:0;}
+ul, ol, li {list-style:none;}
+body {width:100%; height:2230px;}
+a {text-decoration:none;}
+
+
+
+/* main */
+.wrap { 
+    width: 100%; 
+    height: 100%; 
+    position: relative; 
+    overflow-x: hidden; /* 가로 스크롤 제거 */
+}
+
+/* Nav */
+.header {
+    width: 100%;
+    height: 120px;
+    background-color: #ffffff;
+    position: fixed; 
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    position: absolute; 
+    left: 50%; 
+    top: 20px;
+    transform: translateX(-50%); /* 로고를 수평으로 정확히 중앙으로 이동시킵니다. */
+}
+
+.menu li {
+    display: inline-block; 
+    margin-right: 20px; 
+}
+.menu li a {
+    text-decoration: none; 
+    color: #333; 
+    font-size: 16px; 
+    font-weight: bold; 
+}
+
+.language a{
+    position: absolute; 
+    top: 30px; 
+    right: 114px; 
+    color: gray;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+    .menu {
+        width: 100%;
+        position: absolute;
+        bottom: 0; 
+        left: 0; 
+    }
+    
+    .intro {
+        position: absolute;
+        bottom: 20px; 
+        left: 360px; 
+    }
+    .rewards {
+        position: absolute;
+        bottom: 20px; 
+        left: 604px; 
+    }
+
+
+    .cs {
+        position: absolute;
+        bottom: 20px; 
+        right: 495px; 
+    }
+    
+    .check {
+        position: absolute;
+        bottom: 20px; 
+        right: 360px; 
+    }
+
+    .login {
+        position: absolute;
+        bottom: 20px; 
+        right: 634px; 
+    }
+
+
+
+
+.main{
+        width: 1920px;
+        background-color: rgb(0, 0, 0);
+    }
+
+
+.main .page1 {
+    position: absolute;
+    top: 120px;
+    width: 1920px;
+    height: 835px;
+}
+
+.main .seoullogo img{
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.main .page1 .adress {
+    color: white;
+    position: absolute;
+    left: 360px;
+    bottom: 10%;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main .page1 .answer {
+    color: white;
+    position: absolute;
+    left: 450px;
+    bottom: 10%;
+    font-size: 18px;
+    font-weight: 300;
+}
+.main .page1 .sitebutton {
+    width: 300px;
+    height: 70px;
+    background-color: white;
+    border-radius: 40px;
+    position: absolute;
+    bottom: 10%;
+    right: 360px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main .page1 .sitebutton a {
+    text-decoration: none;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    height: 100%; 
+}
+
+.main .page1 .sitebutton a:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #000000;
+    outline: solid 1px black;
+    border-radius: 40px;
+}
+
+
+
+.main .page2 {
+    position: absolute;
+    top: 955px;
+}
+
+.main .page2 h3{
+    color: white;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 3px 3px 3px black;
+}
+
+.main .page2 p{
+    color: white;
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 18px;
+    
+    line-height: 2.0;
+}
+
+
+.footer {
+    width: 100%;
+    height: 360px;
+    background-color: #000000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.footerlogo {
+    position: absolute;
+    left: 360px;
+    top: 70px;
+}
+
+.footercall{
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    left: 605px;
+    top: 70px;
+}
+
+.footershop{
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    right: 360px;
+    top: 70px;
+}
+
+.footertext{
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    left: 360px;
+    top: 190px;
+}
+.footerlanguage{
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    right: 360px;
+    top: 190px; 
+}
+
+.footer hr{
+    position: absolute;
+    top: 160px;
+    width: 80%;
+    right: 10%;
+    border: solid 1px rgb(51, 51, 51);
+    opacity: 50%;
+}
+.footersmall{
+    color: rgb(180, 180, 180);
+    font-size: 13px;
+    position: absolute;
+    left: 360px;
+    top: 250px;
+}
+.footercertification{
+    color: rgb(180, 180, 180);
+    font-size: 13px;
+    position: absolute;
+    right: 360px;
+    top: 250px;
+}

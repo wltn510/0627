@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <h1 class="logo"><a href="index.html"><img src="images/logo.jpg" alt=""></a></h1>
+            <ul class="menu">
+                <li class="intro"><a href="index2.html">호텔신라소개</a></li>
+                <li class="rewards"><a href="#">신라리워즈</a></li>
+                <li  class="login"><a href="#">로그인</a></li>
+                <li  class="cs"><a href="#">고객문의</a></li>
+                <li  class="check"><a href="#">예약확인</a></li>
+            </ul>
+            <div class="language"><a href="#">한국어 v</a></div>
+        </div><!-- header -->
+
+        <div class="main">
+            <div class="mainrewards">
+                <img src="images/reserved.jpg" alt="">
+            <h3>REWARDS URBAN ISLAND</h3>
+            <div class="reservebox">
+                <a href="#"><img src="images/예약하기.png" alt=""></a>
+            </div>
+            </div>
+
+            <div class="special">
+                <h3>SPECIAL OFFER</h3>
+                <a href="index3.html">
+                <img src="images/스페셜오퍼.png" alt=""></a>
+                <div class="text1">서울신라호텔<br>2023.10.24~2024.03.31</div>
+                <div class="text2">제주신라호텔<br>2023.02.21~2024.12.31</div>
+                <div class="text3">제주신라호텔<br>2023.02.01~2024.05.31</div>
+                <div class="text4">신라모노그램 다낭<br>2023.01.01~2025.01.31</div>
+                <div class="text5">신라스테이<br>2024.03.20~2024.06.30</div>
+
+            </div>
+            
+
+            <div class="membership">
+                <h3>MEMBERSHIP</h3>
+                <img src="images/rwCard.png" alt="">
+                <p>신라리워즈는 서울 &middot; 제주신라호텔, 신라모노그램, 신라스테이 및 제휴호텔에서 포인트 혜택 및 특전을 제공하는<br>
+                    통합멤버십 서비스입니다. 지금 가입하시고 회원만을 위한 특별한 서비스와 다양한 혜택을 받아보세요.</p>
+                    <div class="brownbutton1"><a href="#"><span>가입하기</span></a></div>
+                <div class="icon"><img src="images/icon.png" alt=""></div>
+            </div>
+            
+
+            <div class="newsletter">
+                <h3>NEWSLETTER</h3>
+                <div class="inputbox">
+                    <div class="inputemail">
+                        <input type="text" name="email" placeholder="구독받을 이메일 주소를 입력해주세요">
+                    </div>
+                    <div class="inputbutton"><a href="#">@naver.com</a></div>
+                    <div class="brownbutton"><a href="#"><span>구독신청</span></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footerlogo"><img src="images/fotterlogo.jpg" alt=""></div>
+            <div class="footercall">
+                서울신라호텔 02-2233-3131 &nbsp;&nbsp; 제주신라호텔  064-735-5114 
+                <br>신라스테이 02-2230-0700 &nbsp;&nbsp;&nbsp;&nbsp;신라리워즈 02-2230-5528
+            </div>
+            <div class="footershop">
+                호텔신라소개 &nbsp;ㅣ&nbsp;호텔개발&nbsp;ㅣ&nbsp;고객문의&nbsp;ㅣ&nbsp;사이트맵
+                <br>The Shillashop&nbsp;ㅣ&nbsp;삼성상품권
+            </div>
+            <!-- <div class="footersns">
+                SNS<img src="" alt="">
+            </div> -->
+            <hr>
+            <div class="footertext">
+                신라리워즈약관&nbsp;&nbsp;&nbsp;개인정보처리방침&nbsp;&nbsp;&nbsp;이메일무단수집금지&nbsp;&nbsp;&nbsp;
+                윤리경영(부정제보)&nbsp;&nbsp;&nbsp;건축&middot;&nbsp;&nbsp;시설물안전관리
+            </div>
+            <div class="footerlanguage">
+                ENGLISH&nbsp;&nbsp;日本語&nbsp;&nbsp;简体中文
+            </div>
+            <div class="footersmall">
+                (주) 호텔신라 서울특별시 중구 동호로 249 (우 : 04605)&nbsp;대표이사 이부진&nbsp;사업자등록번호 203-81-43363&nbsp;통신판매신고번호 중구00272호
+                <br>호스팅서비스제공자 삼성SDS(주)&nbsp;서울객실예약 shilla.reserve@samsung.com&nbsp;제주객실예약 jejushilla@samsung.com
+                <br>Copyright (C) HOTEL SHILLA CO.LTD.All Rights Reserved.
+            </div>
+            <div class="footercertification">
+                인증범위 : (주)호텔신라 호텔 인터넷 홈페이지 서비스
+                <br>유효기간 : 2023.12.2. ~ 2.26.12.19
+            </div>
+        </div><!-- footer -->
+    </div><!-- wrap -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // ScrollMagic 컨트롤러 초기화
+            var controller = new ScrollMagic.Controller();
+
+            // 스페셜 오퍼 이미지 변경 트리거
+            var tween = gsap.to(".special img", {
+                duration: 0.1, // 1초 동안 애니메이션 실행
+                opacity: 0, 
+                onComplete: function() {
+                    document.querySelector(".special img").src = "images/스페셜오퍼2.png";
+                    gsap.to(".special img", { opacity: 1, duration: 1 });
+                }
+            });
+
+            var scene = new ScrollMagic.Scene({
+                triggerElement: ".special", // 트리거 요소
+                triggerHook: 1, // 뷰포트의 중앙에서 트리거
+                duration: "100%" // 애니메이션 지속시간
+            })
+            .setTween(tween)
+            .addTo(controller);
+
+            // 텍스트 요소들이 나타나는 애니메이션 설정
+            var textTween = gsap.to([".text1", ".text2", ".text3", ".text4", ".text5"], {
+                duration: 0.5, // 1초 동안 애니메이션 실행
+                opacity: 1,
+                stagger: 0.2 // 각 요소마다 0.2초씩 지연
+            });
+
+            var textScene = new ScrollMagic.Scene({
+                triggerElement: ".special", // 트리거 요소
+                triggerHook: 0.1 // 뷰포트의 약간 아래에서 트리거
+            })
+            .setTween(textTween)
+            .addTo(controller);
+        });
+
+        
+    </script>
+</body>
+</html>

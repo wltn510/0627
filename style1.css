@@ -1,0 +1,392 @@
+css
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Noto+Sans+KR:wght@100..900&display=swap');
+body {font-family: "Noto Sans KR", sans-serif;}
+p {font-family: "Noto Sans KR", sans-serif; font-weight: 300; }
+h3 {font-family: "Nanum Myeongjo", serif; font-weight: bolder; font-size: 45px;}
+
+/* reset */
+* {margin:0; padding:0;}
+ul, ol, li {list-style:none;}
+body {width:100%; height:3228px;}
+a {text-decoration:none;}
+
+
+
+/* main */
+.wrap { 
+    width: 100%; 
+    height: 100%; 
+    position: relative; 
+    overflow-x: hidden; /* 가로 스크롤 제거 */
+}
+
+/* Nav */
+.header {
+    width: 100%;
+    height: 120px;
+    background-color: #ffffff;
+    position: absolute; 
+    top: 0;
+}
+
+.logo {
+    position: absolute; 
+    left: 50%; 
+    top: 20px;
+    transform: translateX(-50%); /* 로고를 수평으로 정확히 중앙으로 이동시킵니다. */
+}
+
+.menu li {
+    display: inline-block; 
+    margin-right: 20px; 
+}
+.menu li a {
+    text-decoration: none; 
+    color: #333; 
+    font-size: 16px; 
+    font-weight: bold; 
+}
+
+.language a{
+    position: absolute; 
+    top: 30px; 
+    right: 114px; 
+    color: gray;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+    .menu {
+        width: 100%;
+        position: absolute;
+        bottom: 0; 
+        left: 0; 
+    }
+    
+    .intro {
+        position: absolute;
+        bottom: 20px; 
+        left: 360px; 
+    }
+    .rewards {
+        position: absolute;
+        bottom: 20px; 
+        left: 604px; 
+    }
+
+
+    .cs {
+        position: absolute;
+        bottom: 20px; 
+        right: 495px; 
+    }
+    
+    .check {
+        position: absolute;
+        bottom: 20px; 
+        right: 360px; 
+    }
+
+    .login {
+        position: absolute;
+        bottom: 20px; 
+        right: 634px; 
+    }
+
+
+
+
+.main{
+        width: 1920px;
+        height: 3225px;
+        background-color: #ffffff;
+    }
+
+.main .mainrewards img {
+    position: absolute;
+    top: 120px;
+}
+
+.main .mainrewards h3 {
+    position: absolute;
+    top: 700px;
+    left: 360px;
+    color: white;
+    text-shadow: 3px 5px 5px rgb(0, 0, 0);;
+}
+
+.reservebox {
+    position: absolute;
+    left: 360px;
+    top: 650px;
+
+}
+
+.main .special {
+    position: absolute;
+    top: 960px;
+    width: 1920px;
+    height: 955px;
+/*     outline: solid 3px red; */
+}
+
+.main .special h3{
+    position: absolute;
+    top: 100px;
+    left: 360px;
+    width: 500px;
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+    overflow: hidden; /* 텍스트가 부모 요소를 넘을 때 잘리게 설정 */
+    
+}
+.main .special img {
+    position: absolute;
+    top: 162px;
+    left: 360px;
+}
+.main .special div {
+    width: 260px;
+    height: 50px;
+/*     outline: solid red 1px; */
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.main .special .text1 {
+    position: absolute;
+    top: 225px;
+    left: 1305px;
+}
+.main .special .text2 {
+    position: absolute;
+    top: 365px;
+    left: 355px;
+    text-align: right;
+}
+.main .special .text3 {
+    position: absolute;
+    top: 510px;
+    left: 1305px;
+}
+.main .special .text4 {
+    position: absolute;
+    top: 653px;
+    left: 355px;
+    text-align: right;
+}
+.main .special .text5 {
+    position: absolute;
+    top: 800px;
+    left: 1305px;
+}
+
+/* 멤버쉽 */
+.main .membership {
+    width: 1920px;
+    height: 530px;
+    background-color: #f6f6f6; 
+    position: absolute;
+    top: 1910px;
+}
+
+.main .membership h3 {
+    position: absolute;
+    left: 360px;
+    top: 38px;
+}
+
+.membership img{
+    position: absolute;
+    left: 360px;
+    top: 30%;
+}
+.membership .icon img{
+    position: absolute;
+    left: 820px;
+}
+
+.membership p {
+    position: absolute;
+    left: 820px;
+    bottom: 38%;
+}
+
+.membership .brownbutton1 {
+    position: absolute;
+    left: 820px;
+    width: 162px;
+    height: 57px;
+    text-decoration:none;
+    color: white;
+    font-size: 18px;
+    background-color: #3e2c2c;
+    bottom: 20%;
+}
+
+.membership .brownbutton1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.membership .brownbutton1 span {
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+
+/* 뉴스레터 */
+.main .newsletter {
+    width: 1920px;
+    height: 425px;
+/*     background-color: aqua; */
+    position: absolute;
+    bottom: 360px;
+
+}
+
+.main .newsletter h3 {
+    position: absolute;
+    left: 360px;
+    top: 45%;
+}
+
+
+.inputbox {
+    position: absolute;
+    right: 360px;
+    top: 45%;
+    width: 865px;
+    height: 58px;
+/*     outline: solid 1px blue; */
+    display: flex; /* 내부 요소들을 수평으로 정렬하기 위해 flex 속성 추가 */
+    align-items: center; /* 내부 요소들을 수직 가운데 정렬하기 위해 align-items 속성 추가 */
+    justify-content: space-between; /* 내부 요소들을 왼쪽과 오른쪽 끝으로 정렬하기 위해 추가 */
+}
+
+
+
+.inputemail input {
+    width: 485px;
+    height: 55px;
+    font-size: 18px;
+    background-color: #f6f6f6;
+    border: 1px solid grey;
+    text-align: center;
+    float: left;
+}
+
+.inputbutton {
+    width: 215px;
+    height: 55px;
+    background-color: #f6f6f6;
+    border: 1px solid grey;
+    font-size: 18px;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputbutton a {
+    text-decoration: none; /* 링크에 밑줄을 제거합니다. */
+    color: inherit; /* 부모 요소의 색상을 상속받아 사용합니다. */
+}
+
+.newsletter .brownbutton {
+    width: 162px;
+    height: 57px;
+    text-decoration:none;
+    color: white;
+    font-size: 18px;
+    background-color: #3e2c2c;
+    position: relative; 
+}
+
+.newsletter .brownbutton a {
+    color: white; 
+    text-decoration: none; 
+}
+
+.brownbutton span {
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+
+.footer {
+    width: 100%;
+    height: 360px;
+    background-color: #000000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.footerlogo {
+    position: absolute;
+    left: 360px;
+    top: 70px;
+}
+
+.footercall{
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    left: 605px;
+    top: 70px;
+}
+
+.footershop{
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    right: 360px;
+    top: 70px;
+}
+
+.footertext{
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    left: 360px;
+    top: 190px;
+}
+.footerlanguage{
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    right: 360px;
+    top: 190px; 
+}
+
+.footer hr{
+    position: absolute;
+    top: 160px;
+    width: 80%;
+    right: 10%;
+    border: solid 1px rgb(51, 51, 51);
+    opacity: 50%;
+}
+.footersmall{
+    color: rgb(180, 180, 180);
+    font-size: 13px;
+    position: absolute;
+    left: 360px;
+    top: 250px;
+}
+.footercertification{
+    color: rgb(180, 180, 180);
+    font-size: 13px;
+    position: absolute;
+    right: 360px;
+    top: 250px;
+}
+
+.text1, .text2, .text3, .text4, .text5 {
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* 부드럽게 나타나는 효과 */
+}
